@@ -7,18 +7,15 @@
 //
 
 import UIKit
+import SwiftExtensions
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print("alahiry098@gmail.com".isValidEmail)
+        print("1234".isValidOTP(length: 5))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
