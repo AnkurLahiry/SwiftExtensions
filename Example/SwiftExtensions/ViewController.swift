@@ -13,8 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("alahiry098@gmail.com".isValidEmail)
-        print("1234".isValidOTP(length: 5))
     }
     
 }
