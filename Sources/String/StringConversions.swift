@@ -1,8 +1,8 @@
 
 import Foundation
 
-extension String {
-    public func asCurrency(with currencySymbol : String = "$", maxFractionDigit : Int = 2) -> String {
+public extension String {
+    func asCurrency(with currencySymbol : String = "$", maxFractionDigit : Int = 2) -> String {
         
         guard let value = self.doubleValue else {
             fatalError("Unable to convert string to double")
@@ -18,15 +18,15 @@ extension String {
         fatalError("Unable to format")
     }
     
-    public var doubleValue : Double? {
+    var doubleValue : Double? {
         return Double(self)
     }
     
-    public var intValue : Int? {
+    var intValue : Int? {
         return Int(self)
     }
     
-    public var floatValue : Float? {
+    var floatValue : Float? {
         return Float(self)
     }
 }

@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     /// Returns which view controller is currently top on the screen
     /// - Parameter base: Base View Controller , default is RootViewController
     /// - Returns: UIViewController
-    public class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         
         
         if let nav = base as? UINavigationController {
