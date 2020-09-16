@@ -11,6 +11,10 @@
 		6125190E19A2BD862FF3D756B4C6A356 /* Pods-SwiftExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19571CE5D54429BEEC8CC3C711784AF7 /* Pods-SwiftExtensions_Tests-dummy.m */; };
 		80E1D6EA73C73931DD8B7EF2160F8A4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		84A68D530DEE1E295F4BF587CBF45795 /* Pods-SwiftExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B96449C5DA8B13484C8991AD9F55D62F /* Pods-SwiftExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9218039E2511CDFF00B616BC /* EmojiCharacterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218039D2511CDFF00B616BC /* EmojiCharacterExtensions.swift */; };
+		921803A02511CE1F00B616BC /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218039F2511CE1F00B616BC /* TopViewController.swift */; };
+		926DA2E12511BCAC008F0B46 /* StringManipulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DA2E02511BCAC008F0B46 /* StringManipulations.swift */; };
+		926DA2E32511BCC1008F0B46 /* EmojiStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DA2E22511BCC1008F0B46 /* EmojiStringExtensions.swift */; };
 		927978C625112690008B6499 /* ValidString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927978C525112690008B6499 /* ValidString.swift */; };
 		927978C825112BE4008B6499 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927978C725112BE4008B6499 /* Constants.swift */; };
 		927978CA251134B7008B6499 /* StringConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927978C9251134B7008B6499 /* StringConversions.swift */; };
@@ -65,6 +69,10 @@
 		79DF3BA0B1FA8D40B04F6F01245A5C1E /* Pods-SwiftExtensions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftExtensions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		81E212CE644F82E88DE4E5B784F41529 /* Pods-SwiftExtensions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftExtensions_Example-dummy.m"; sourceTree = "<group>"; };
 		8D3AE169948AB09F912E3B7B8244D72B /* Pods-SwiftExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9218039D2511CDFF00B616BC /* EmojiCharacterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCharacterExtensions.swift; sourceTree = "<group>"; };
+		9218039F2511CE1F00B616BC /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		926DA2E02511BCAC008F0B46 /* StringManipulations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringManipulations.swift; sourceTree = "<group>"; };
+		926DA2E22511BCC1008F0B46 /* EmojiStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiStringExtensions.swift; sourceTree = "<group>"; };
 		927978C525112690008B6499 /* ValidString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidString.swift; sourceTree = "<group>"; };
 		927978C725112BE4008B6499 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		927978C9251134B7008B6499 /* StringConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConversions.swift; sourceTree = "<group>"; };
@@ -136,9 +144,27 @@
 			path = "Target Support Files/Pods-SwiftExtensions_Tests";
 			sourceTree = "<group>";
 		};
+		926DA2E42511BD3B008F0B46 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				9218039D2511CDFF00B616BC /* EmojiCharacterExtensions.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		926DA2E92511BED6008F0B46 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				9218039F2511CE1F00B616BC /* TopViewController.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		927978C12511263A008B6499 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				926DA2E92511BED6008F0B46 /* UIApplication */,
+				926DA2E42511BD3B008F0B46 /* Character */,
 				927978D825114343008B6499 /* User Defaults */,
 				927978C22511264A008B6499 /* String */,
 				927978C725112BE4008B6499 /* Constants.swift */,
@@ -149,8 +175,10 @@
 		927978C22511264A008B6499 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				926DA2E22511BCC1008F0B46 /* EmojiStringExtensions.swift */,
 				927978C525112690008B6499 /* ValidString.swift */,
 				927978C9251134B7008B6499 /* StringConversions.swift */,
+				926DA2E02511BCAC008F0B46 /* StringManipulations.swift */,
 				927978D4251141A8008B6499 /* Localizations.swift */,
 				927978D62511420E008B6499 /* StringUserDefaults.swift */,
 			);
@@ -424,11 +452,15 @@
 			files = (
 				927978D5251141A8008B6499 /* Localizations.swift in Sources */,
 				927978C625112690008B6499 /* ValidString.swift in Sources */,
+				921803A02511CE1F00B616BC /* TopViewController.swift in Sources */,
+				9218039E2511CDFF00B616BC /* EmojiCharacterExtensions.swift in Sources */,
 				DD9462C15B7EB4125495738FE239BA90 /* SwiftExtensions-dummy.m in Sources */,
 				927978CA251134B7008B6499 /* StringConversions.swift in Sources */,
 				927978DA2511435C008B6499 /* UserDefaultsExtensions.swift in Sources */,
 				927978C825112BE4008B6499 /* Constants.swift in Sources */,
+				926DA2E32511BCC1008F0B46 /* EmojiStringExtensions.swift in Sources */,
 				927978D72511420E008B6499 /* StringUserDefaults.swift in Sources */,
+				926DA2E12511BCAC008F0B46 /* StringManipulations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +507,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExtensions_Example/Pods-SwiftExtensions_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExtensions_Example/Pods-SwiftExtensions_Example.modulemap";
@@ -510,7 +542,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExtensions_Tests/Pods-SwiftExtensions_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExtensions_Tests/Pods-SwiftExtensions_Tests.modulemap";
@@ -543,7 +575,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExtensions_Tests/Pods-SwiftExtensions_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExtensions_Tests/Pods-SwiftExtensions_Tests.modulemap";
@@ -578,7 +610,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExtensions_Example/Pods-SwiftExtensions_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExtensions_Example/Pods-SwiftExtensions_Example.modulemap";
@@ -645,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,7 +739,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -737,7 +769,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftExtensions/SwiftExtensions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftExtensions/SwiftExtensions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftExtensions/SwiftExtensions.modulemap";
 				PRODUCT_MODULE_NAME = SwiftExtensions;
@@ -770,7 +802,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftExtensions/SwiftExtensions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftExtensions/SwiftExtensions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftExtensions/SwiftExtensions.modulemap";
 				PRODUCT_MODULE_NAME = SwiftExtensions;
