@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     init?(key: String) {
         guard let str = UserDefaults.get(key: key) as? String else { return nil }
         self.init(str)

@@ -1,38 +1,38 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
-    public var trim : String {
+    var trim : String {
         return self.trimmingCharacters(in: .whitespaces)
     }
     
-    public var trimWithNewLine : String {
+    var trimWitWhiteSpacesAndhNewLine : String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    public subscript (i: Int) -> String {
+    subscript (i: Int) -> String {
         guard i >= 0 && i <= length else {
             fatalError("Index out of bound")
         }
         return self[i ..< i + 1]
     }
     
-    public func substring(from index: Int) -> String {
+    func substring(from index: Int) -> String {
         guard index >= 0 && index < length else {
             fatalError("Index out of bound")
         }
         return self[min(index, length) ..< length]
     }
     
-    public func substring(to index: Int) -> String {
+    func substring(to index: Int) -> String {
         guard index >= 0 && index <= length else {
             fatalError("Index out of bound")
         }
         return self[0 ..< max(0, index)]
     }
     
-    public func subString(from fIndex : Int, to tIndex : Int) -> String {
+    func subString(from fIndex : Int, to tIndex : Int) -> String {
         guard fIndex >= 0 && fIndex <= length else {
             fatalError("Index out of bound")
         }
