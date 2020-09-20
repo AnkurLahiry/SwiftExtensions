@@ -2,9 +2,11 @@
 
 ### Xcode ###
 build
+*.xcodeproj/
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcworkspace/contents.xcworkspacedata
+
 
 
 ### Objective-C ###
