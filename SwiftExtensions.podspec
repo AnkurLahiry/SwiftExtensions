@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftExtensions'
-  s.version          = '0.0.1'
+  s.version          = '0.1.0'
   s.summary          = 'A collection of Swift Extensions that we use in our daily developments.'
 
 # This description is used to generate tags and improve search results.
