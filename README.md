@@ -1,5 +1,7 @@
 # SwiftExtensions
 
+![](/images/Swift-Extensions.png)
+
 [![CI Status](https://img.shields.io/travis/AnkurLahiry/SwiftExtensions.svg?style=flat)](https://travis-ci.org/AnkurLahiry/SwiftExtensions)
 [![Version](https://img.shields.io/cocoapods/v/SwiftExtensions.svg?style=flat)](https://cocoapods.org/pods/SwiftExtensions)
 [![License](https://img.shields.io/cocoapods/l/SwiftExtensions.svg?style=flat)](https://cocoapods.org/pods/SwiftExtensions)
