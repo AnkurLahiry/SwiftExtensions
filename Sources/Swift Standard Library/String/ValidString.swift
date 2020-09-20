@@ -37,7 +37,9 @@ public extension String {
         return false
     }
     
-    /// check if the string letter
+    /// check if the string contains at least one letter
+    ///Example "123a".containsLetter will return true
+    ///Example "123".containsLetter will return false
     var containsLetter : Bool {
         let string = self
         let lettersChars = CharacterSet.letters
@@ -53,6 +55,23 @@ public extension String {
         return string.isEmpty
     }
     
+    ///Get the words from the string
+    ///For Example "Hello world".words will return "["Hello", "World"]"
+    var words : [String] {
+        return self.components(separatedBy: " ")
+    }
+    
+    ///Returns first character of the String
+    ///"Hello".first wiil return "H"
+    var first : String? {
+        return self[0]
+    }
+    
+    ///Returns last character of the String
+    ///"Hello".last wiil return "o"
+    var last : String? {
+        return self[self.count - 1]
+    }
     
     /// Check if the string is a valid OTP. OTP should contains only digits.
     /// - Parameter length: The maximum length of the OTP Should be
@@ -82,6 +101,9 @@ public extension String {
         return matchWith(regex: regularExpression)
     }
     
+    /// Match a string a Regular Expression (Regex)
+    /// - Parameter regex: Regular Expression
+    /// - Returns: if a string is ragex or not
     private func matchWith(regex : String) -> Bool {
         do {
             let regex = try NSRegularExpression(pattern: regex, options: [])
@@ -95,5 +117,5 @@ public extension String {
             return false
         }
     }
-    
+
 }

@@ -3,12 +3,22 @@ import Foundation
 
 public extension String {
     
+    ///Removes whitespaces from both side of the string
     var trim : String {
         return self.trimmingCharacters(in: .whitespaces)
     }
     
+    ///Removes the white spaces and new lines from the string 
     var trimWitWhiteSpacesAndhNewLine : String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    var reverse : String {
+        return String(self.reversed())
+    }
+    
+    var isPalindrome : Bool {
+        return self == self.reverse
     }
     
     subscript (i: Int) -> String {

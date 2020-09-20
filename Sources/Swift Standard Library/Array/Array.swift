@@ -13,7 +13,6 @@ public extension Array where Element : Hashable {
         var allowed = Set(self)
         return compactMap { allowed.remove($0) }
     }
-    
 }
 
 public extension Array where Element : Comparable {
@@ -31,18 +30,18 @@ public extension Array where Element : Comparable {
             return true
         }
         var sorted = self
-        sorted = sorted.sorted(by: { (c1, c2) -> Bool in
-            if c1 >= c2 {
-                return true
-            } else {
-                return false
-            }
-        })
+        sorted = sorted.decendingSort
         return self == sorted
     }
+    
+    var ascendingSort : [Element] {
+        return self.sorted()
+    }
+    
+    var decendingSort : [Element] {
+        return self.sorted(by: >)
+    }
 }
-
-
 
 public extension Array where Element : Numeric {
     var sum : Element {

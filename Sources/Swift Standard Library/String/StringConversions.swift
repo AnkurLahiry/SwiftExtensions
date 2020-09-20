@@ -29,4 +29,5 @@ public extension String {
     var floatValue : Float? {
         return Float(self)
     }
+    
 }
