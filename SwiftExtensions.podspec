@@ -26,9 +26,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/AnkurLahiry/SwiftExtensions.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.linkedin.com/in/ankurlahiry'
 
+  s.swift_version = '4.0'
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'SwiftExtensions/Sources/**/*'
+  s.source_files = 'SwiftExtensions/**/*'
   
   # s.resource_bundles = {
   #   'SwiftExtensions' => ['SwiftExtensions/Assets/*.png']
