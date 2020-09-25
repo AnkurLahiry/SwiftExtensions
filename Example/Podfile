@@ -5,7 +5,5 @@ target 'SwiftExtensions_Example' do
 
   target 'SwiftExtensions_Tests' do
     inherit! :search_paths
-
-    
   end
 end

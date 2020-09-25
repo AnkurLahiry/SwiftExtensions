@@ -26,7 +26,6 @@ public extension UIDevice {
         return UIDevice().userInterfaceIdiom == .tv
     }
     
-    
     enum ScreenType: String {
         case iPhone4
         case iPhone5
