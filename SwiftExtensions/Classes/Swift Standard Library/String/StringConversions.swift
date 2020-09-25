@@ -30,4 +30,28 @@ public extension String {
         return Float(self)
     }
     
+    
+    /// Convert A String to K Value
+    /// Example -> 36000.toK = 36K
+    var toK : String? {
+        guard let `int` = self.doubleValue, `int` > 0 else {
+            fatalError("Unable to convert String to Int")
+        }
+        return "\(`int` / 1000)K"
+    }
+    
+    var toM : String? {
+        guard let `int` = self.intValue else {
+            fatalError("Unable to convert String to Int")
+        }
+        return "\(`int` / 1000 / 1000)M"
+    }
+    
+    var toB : String? {
+        guard let `int` = self.intValue else {
+            fatalError("Unable to convert String to Int")
+        }
+        return "\(`int` / 1000 / 1000 / 1000)B"
+    }
+    
 }
